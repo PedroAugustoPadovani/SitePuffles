@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 .container {
@@ -22,5 +23,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.h1_login{
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.logo_login{
+    margin-top: -6rem;
+}
+
+.inputs{
+    margin-bottom: 20px;
+    border: 2px solid red;
+}
+
+.input_form{
+    width: 20rem;
+    height: 1.5rem;
+    border: 2px solid gray; 
 }
 
