@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styleindex.css">
 </head>
 <body>
     <div class="login_geral">
-        <div class="logo_login"></div>
-        <div class="texto_imagem"></div>
+        <div class="logo_login"></div><!--Fechamento logo_login-->
+        <div class="titulo_login"></div><!--Fechamento titulo_login-->
         <div class="inputs">
-            <div class="campo_input"></div>
-        </div>
-        <div class="botao_login"></div>
-    </div>
+            <div class="campo_input_email">
+                <form>
+                    <label for="email">Email:</label><br>
+                    <input type="text" name="email" id="email" class="input_form"/>
+                </form>
+            </div><!--Fechamento input_email-->
+            <div class="campo_input_senha">
+                <form>
+                    <label for="senha">Senha</label><br>
+                    <input type="password" name="senha" id="senha" class="input_form"/>
+                </form>
+            </div><!--Fechamento input_senha-->
+        </div> <!--Fechamento inputs-->
+        <div class="div_botao_login">
+            <button class="botao_login">Entrar</button>
+        </div><!--Fechamento div_botao_login-->
+    </div><!--Fechamento login_geral-->
 </body>
 </html>
