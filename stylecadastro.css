@@ -62,17 +62,17 @@ header {
     align-items: center;
 }
 
-.login_geral {
+.cadastro_geral {
     border: 2px solid;
     border-radius: 2%;
     width: 35rem;
-    height: 35rem;
+    height: 43rem;
     background: #54A4FF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 14rem;
 }
 
 .logo_login{
@@ -102,7 +102,7 @@ header {
     margin-top: 2px; 
 }
 
-.botao_login{
+.botao_cadastro{
     width: 10rem;
     height: 2.3rem;
     border: 2px solid rgb(77, 77, 77);
@@ -113,7 +113,7 @@ header {
     font-size: 17px;	
 }
 
-.sem_cadastro{
+.login{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,7 +121,17 @@ header {
     margin-top: 5px;
     margin-bottom: -30px;
 }
-.botao_cadastro{
+
+.fazer_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: -30px;
+}
+
+.botao_login{
     width: 10rem;
     height: 2.3rem;
     border: 2px solid rgb(77, 77, 77);
