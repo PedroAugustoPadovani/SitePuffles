@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="stylehome.css">
+    <script src="scriptslideshow.js"></script>
 </head>
 
 <body>
@@ -13,51 +14,24 @@
         <div class="logo_header"><img src="imagens/Logo.PNG" width="170rem" height="50rem"></div>
         <div class="botao_home_header"><a href="principal.html">Home</a></div>
         <div class="botao_login_header"><a href="index.html">Login</a></div>
-        <div class="botao_login_header"><a href="meu_puffle.html">Meu Puffle</a></div>
+        <div class="botao_meu_puffle_header"><a href="meu_puffle.html">Meu Puffle</a></div>
         <div class="botao_carrinho_header"><a href="carrinho.html"><img src="imagens/icon_carrinho.png" width="50rem" height="50rem"></a></div>
     </header>
     <div class="container">
-            <div class="slideshow">
-                <img class="slide" src="imagens/imgslide1.webp" alt="Imagem 1">
-                <img class="slide" src="imagens/imgslide2.webp" alt="Imagem 2">
-                <img class="slide" src="imagens/imgslide3.webp" alt="Imagem 3">
-                <img class="slide" src="imagens/imgslide4.webp" alt="Imagem 4">
-            </div>
+        <div class="slideshow">
+            <img class="slide" src="imagens/imgslide1.webp" alt="Imagem 1">
+            <img class="slide" src="imagens/imgslide2.webp" alt="Imagem 2">
+            <img class="slide" src="imagens/imgslide3.webp" alt="Imagem 3">
+            <img class="slide" src="imagens/imgslide4.webp" alt="Imagem 4">
+        </div> <!--Fechamento slideshow-->
 
+        <div class="carousel">
+            <button class="arrow" onclick="prevSlide()">⬅️</button>
+            <div id="imageContainer"></div>
+            <button class="arrow" onclick="nextSlide()">➡️</button>
+        </div>
 
-
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function (event) {
-                var slides = document.getElementsByClassName("slide"); // Seleciona todos os elementos com a classe "slide" e os armazena em uma variável
-
-                var currentSlide = 0; // Variável que armazena o índice do slide atual
-
-                function showSlide() {
-                    // Esconde todos os slides
-                    for (var i = 0; i < slides.length; i++) {
-                        slides[i].classList.remove("active"); // Remove a classe "active" de todos os slides
-                    }
-
-                    // Exibe o slide atual
-                    slides[currentSlide].classList.add("active"); // Adiciona a classe "active" ao slide atual
-
-                    // Atualiza o índice do slide atual
-                    currentSlide++; // Incrementa o índice do slide atual
-                    if (currentSlide >= slides.length) {
-                        currentSlide = 0; // Volta ao primeiro slide se atingir o limite
-                    }
-
-                    // Chama a função showSlide() novamente após 3 segundos
-                    setTimeout(showSlide, 3000); // Define um intervalo de 3 segundos para a próxima chamada da função
-                }
-
-                // Inicia o slideshow
-                showSlide();
-            });
-
-        </script>
-    </div>
+    </div><!--Fechamento container-->
 </body>
 
 </html>

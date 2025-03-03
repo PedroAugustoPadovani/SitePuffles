@@ -26,6 +26,10 @@ header {
     margin-left: -35rem;
 }
 
+.botao_meu_puffle_header{
+    margin-left: -35rem;
+}
+
 .botao_carrinho_header{
     margin-left: -35rem;
     margin-right: 4rem;
@@ -39,6 +43,13 @@ header {
 }
 
 .botao_login_header a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.botao_meu_puffle_header a{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
