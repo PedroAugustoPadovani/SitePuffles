@@ -14,7 +14,7 @@ header {
     align-items: center;
 }
 
-.logo_header{
+.logo_header {
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -22,41 +22,41 @@ header {
 /* .botao_home_header{
 } */
 
-.botao_login_header{
+.botao_login_header {
     margin-left: -35rem;
 }
 
-.botao_meu_puffle_header{
+.botao_meu_puffle_header {
     margin-left: -35rem;
 }
 
-.botao_carrinho_header{
+.botao_carrinho_header {
     margin-left: -35rem;
     margin-right: 4rem;
 }
 
-.botao_home_header a{
+.botao_home_header a {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     text-decoration: none;
 }
 
-.botao_login_header a{
+.botao_login_header a {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     text-decoration: none;
 }
 
-.botao_meu_puffle_header a{
+.botao_meu_puffle_header a {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     text-decoration: none;
 }
 
-.botao_carrinho_header a{
+.botao_carrinho_header a {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
@@ -64,6 +64,7 @@ header {
 }
 
 .container {
+    margin-top: 50px;
     width: 100vw;
     height: 100vh;
     background: #ffffff;
@@ -77,7 +78,7 @@ header {
     width: 65%;
     height: 500px;
     overflow: hidden;
-    position: relative;
+    position: absolute;
 }
 
 .slide {
@@ -87,14 +88,15 @@ header {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out; /* Adiciona uma transição suave de 0.5 segundos */
+    transition: opacity 0.5s ease-in-out;
+    /* Adiciona uma transição suave de 0.5 segundos */
 }
 
 .slide.active {
     opacity: 1;
 }
 
-.carousel {
+/* .carousel {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -106,7 +108,7 @@ header {
 #imageContainer {
     display: flex;
     gap: 10px;
-    width: 50rem; /* Garante que todas as imagens caibam */
+    width: 50rem; 
     justify-content: center;
 }
 .carousel img {
@@ -123,4 +125,129 @@ header {
     padding: 10px;
     border-radius: 5px;
     border: none;
-}   
+}    */
+
+.button{
+    margin: 0 10px;
+    padding: 8px;
+    border: black;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: rgb(0, 89, 255);
+    background: rgb(241, 241, 241);
+    box-shadow: 0px 10px 40px -12px #868686;
+    transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55), background-position 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 500ms linear;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.button-hover:active {
+    transform: scale(1);
+    background-position: 500px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+.produtos {
+    position: absolute;
+    margin-top: 70rem;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.produtos2 {
+    position: absolute;
+    margin-top: 135rem;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.produtos_comida1 {
+    position: absolute;
+    margin-top: 200rem;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.produtos_comida2 {
+    position: absolute;
+    margin-top: 265rem;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 4rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+.produto_comida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 4rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.produto p{
+    color: black;
+}
+
+.produto_comida p{
+    color: black;
+}
+
+.produto_comida .p_esp{
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #54A4FF;
+    width: 100vw;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
