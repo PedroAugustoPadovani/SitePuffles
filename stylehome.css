@@ -97,6 +97,7 @@ header {
 }
 
 /* .carousel {
+    margin-top:45rem;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -153,7 +154,7 @@ header {
 
 .produtos {
     position: absolute;
-    margin-top: 70rem;
+    margin-top: 90rem;
     width: 100vw;
     height: 100vh;
     background: #ffffff;
@@ -167,8 +168,8 @@ header {
 
 .produtos2 {
     position: absolute;
-    margin-top: 135rem;
-    width: 100vw;
+    margin-top: 155rem;
+    width: 120vw;
     height: 100vh;
     background: #ffffff;
     display: flex;
@@ -181,7 +182,7 @@ header {
 
 .produtos_comida1 {
     position: absolute;
-    margin-top: 200rem;
+    margin-top: 220rem;
     width: 100vw;
     height: 100vh;
     background: #ffffff;
@@ -195,7 +196,7 @@ header {
 
 .produtos_comida2 {
     position: absolute;
-    margin-top: 265rem;
+    margin-top: 285rem;
     width: 100vw;
     height: 100vh;
     background: #ffffff;
@@ -243,7 +244,7 @@ header {
 }
 
 footer {
-    margin-top: 140rem;
+    margin-top: 150rem;
     background-color: #54A4FF;
     width: 100vw;
     height: 8rem;
