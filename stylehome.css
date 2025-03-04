@@ -96,38 +96,6 @@ header {
     opacity: 1;
 }
 
-/* .carousel {
-    margin-top:45rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: #4A90E2;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-#imageContainer {
-    display: flex;
-    gap: 10px;
-    width: 50rem; 
-    justify-content: center;
-}
-.carousel img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: white;
-}
-.arrow {
-    font-size: 24px;
-    cursor: pointer;
-    color: black;
-    background: #4A90E2;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-}    */
-
 .button{
     margin: 0 10px;
     padding: 8px;
@@ -154,7 +122,7 @@ header {
 
 .produtos {
     position: absolute;
-    margin-top: 90rem;
+    margin-top: 30rem;
     width: 100vw;
     height: 100vh;
     background: #ffffff;
@@ -168,7 +136,7 @@ header {
 
 .produtos2 {
     position: absolute;
-    margin-top: 155rem;
+    margin-top: 100rem;
     width: 120vw;
     height: 100vh;
     background: #ffffff;
@@ -182,7 +150,7 @@ header {
 
 .produtos_comida1 {
     position: absolute;
-    margin-top: 220rem;
+    margin-top: 170rem;
     width: 100vw;
     height: 100vh;
     background: #ffffff;
@@ -196,7 +164,7 @@ header {
 
 .produtos_comida2 {
     position: absolute;
-    margin-top: 285rem;
+    margin-top: 240rem;
     width: 100vw;
     height: 100vh;
     background: #ffffff;
@@ -244,7 +212,7 @@ header {
 }
 
 footer {
-    margin-top: 150rem;
+    margin-top: 120rem;
     background-color: #54A4FF;
     width: 100vw;
     height: 8rem;
@@ -263,3 +231,4 @@ footer {
     margin-right: 30px;
     margin-left: 15px;
 }
+

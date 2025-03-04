@@ -7,6 +7,42 @@
     <title>Home</title>
     <link rel="stylesheet" href="stylehome.css">
     <script src="scriptslideshow.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper -->
+    <style>
+        html,
+
+        .swiper {
+            position: absolute;
+            border: 2px solid rgb(255, 255, 255);
+            width: 99vw;
+            height:50vh;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsla(209, 93%, 60%, 0.438);
+        }
+
+        @media (max-width: 760px) {
+            .swiper-button-next {
+                right: 20px;
+                transform: rotate(90deg);
+            }
+
+            .swiper-button-prev {
+                left: 20px;
+                transform: rotate(90deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -25,89 +61,147 @@
             <img class="slide" src="imagens/imgslide3.webp" alt="Imagem 3">
             <img class="slide" src="imagens/imgslide4.webp" alt="Imagem 4">
         </div> <!--Fechamento slideshow-->
+    </div>
+    <!-- Swiper -->
 
-        <!-- <div class="carousel">
-            <button class="arrow" onclick="prevSlide()">⬅️</button>
-            <div id="imageContainer"><img src="imagens/Puffle_vermelho.webp" alt="Imagem 1"></div>
-            <div id="imageContainer"><img src="imagens/Puffle_vermelho.webp" alt="Imagem 1"></div>
-            <div id="imageContainer"><img src="imagens/Puffle_vermelho.webp" alt="Imagem 1"></div>
-            <div id="imageContainer"><img src="imagens/Puffle_vermelho.webp" alt="Imagem 1"></div>
-            <button class="arrow" onclick="nextSlide()">➡️</button>
-        </div> -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imagens/Puffle_colorido.webp" width="180rem" height="180rem"></div>
+            <div class="swiper-slide"><img src="imagens/Puffle_Dourado.webp" width="180rem" height="180rem"></div>
+            <div class="swiper-slide"><img src="imagens/Puffle_Foguinho.webp" width="180rem" height="180rem"></div>
+            <div class="swiper-slide"><img src="imagens/Blast_Poster.webp" width="180rem" height="180rem"></div>
+            <div class="swiper-slide"><img src="imagens/Green_Funny_Puffle.webp" width="180rem" height="180rem"></div>
+            <div class="swiper-slide"><img src="imagens/Loop_Poster.webp" width="180rem" height="180rem"></div>
+            <div class="swiper-slide"><img src="imagens/Bouncer_Poster.webp" width="220rem" height="170rem"></div>
+            <div class="swiper-slide"><img src="imagens/Pop_Poster.webp" width="220rem" height="170rem"></div>
+            <div class="swiper-slide"><img src="imagens/Chirp_Poster.webp" width="200rem" height="170rem"></div>
+            <div class="swiper-slide"><img src="imagens/Chill_Poster.webp" width="180rem" height="180rem"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Inicializar Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                },
+            },
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+    </script>
+
+    <div class="container">
         <div class="produtos">
             <div class="produto">
                 <img src="imagens/PuffleVerde.webp" width="200rem" height="200rem">
-                <p>Puffle Verde<br>R$ 2000,00<br>Alegre<br>Ama Pizza<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p>Puffle Verde<br>R$ 2000,00<br>Alegre<br>Ama Pizza<br><br><a href="carrinho.html"><button
+                            type="submit" class="button">Comprar</button></a></p>
             </div>
             <div class="produto">
                 <img src="imagens/PuffleRoxo.webp" width="200rem" height="200rem">
-                <p>Puffle Roxo<br>R$ 2000,00<br>Enjoado<br>Ama Pretzel<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p>Puffle Roxo<br>R$ 2000,00<br>Enjoado<br>Ama Pretzel<br><br><a href="carrinho.html"><button
+                            type="submit" class="button">Comprar</button></a></p>
             </div>
             <div class="produto">
                 <img src="imagens/PuffleRosa.webp" width="200rem" height="200rem">
-                <p>Puffle Rosa<br>R$ 2000,00<br>Alegre<br>Ama Fruta Puffle<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p>Puffle Rosa<br>R$ 2000,00<br>Alegre<br>Ama Fruta Puffle<br><br><a href="carrinho.html"><button
+                            type="submit" class="button">Comprar</button></a></p>
             </div>
             <div class="produto">
                 <img src="imagens/PufflePreto.webp" width="200rem" height="200rem">
-                <p>Puffle Preto<br>R$ 2000,00<br>Melancólico<br>Ama Maçã<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p>Puffle Preto<br>R$ 2000,00<br>Melancólico<br>Ama Maçã<br><br><a href="carrinho.html"><button
+                            type="submit" class="button">Comprar</button></a></p>
             </div>
         </div><!--Fechamento produtos-->
 
         <div class="produtos2">
             <div class="produto">
                 <img src="imagens/Brown_Puffle.webp" width="200rem" height="200rem">
-                <p>Puffle Marrom<br>R$ 2000,00<br>Pensativo<br>Ama Fruta de Puffle<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p>Puffle Marrom<br>R$ 2000,00<br>Pensativo<br>Ama Fruta de Puffle<br><br><a
+                        href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
             </div>
             <div class="produto">
                 <img src="imagens/Puffle_laranja.webp" width="200rem" height="200rem">
-                <p>Puffle Laranja<br>R$ 2000,00<br>Brincalhão<br>Ama Cookie<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p>Puffle Laranja<br>R$ 2000,00<br>Brincalhão<br>Ama Cookie<br><br><a href="carrinho.html"><button
+                            type="submit" class="button">Comprar</button></a></p>
             </div>
             <div class="produto">
                 <img src="imagens/Puffle_vermelho.webp" width="200rem" height="200rem">
-                <p>Puffle Vermelho<br>R$ 2000,00<br>Bravo<br>Ama Cenoura<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p>Puffle Vermelho<br>R$ 2000,00<br>Bravo<br>Ama Cenoura<br><br><a href="carrinho.html"><button
+                            type="submit" class="button">Comprar</button></a></p>
             </div>
             <div class="produto">
                 <img src="imagens/PuffleAzul.webp" width="200rem" height="200rem">
-                <p>Puffle Azul<br>R$ 2000,00<br>Sério<br>Ama Pretzel<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p>Puffle Azul<br>R$ 2000,00<br>Sério<br>Ama Pretzel<br><br><a href="carrinho.html"><button
+                            type="submit" class="button">Comprar</button></a></p>
             </div>
         </div><!--Fechamento produtos-->
 
         <div class="produtos_comida1">
             <div class="produto_comida">
                 <img src="imagens/Apple.webp" width="200rem" height="200rem">
-                <p>Maçã<br>R$ 20,00<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p>Maçã<br>R$ 20,00<br><br><a href="carrinho.html"><button type="submit"
+                            class="button">Comprar</button></a>
+                </p>
             </div>
             <div class="produto_comida">
                 <img src="imagens/Carrot.webp" width="200rem" height="200rem">
-                <p>Cenoura<br>R$ 20,00<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p>Cenoura<br>R$ 20,00<br><br><a href="carrinho.html"><button type="submit"
+                            class="button">Comprar</button></a></p>
             </div>
             <div class="produto_comida">
                 <img src="imagens/Cookie.webp" width="200rem" height="200rem">
-                <p>Cookie<br>R$ 20,00<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p>Cookie<br>R$ 20,00<br><br><a href="carrinho.html"><button type="submit"
+                            class="button">Comprar</button></a></p>
             </div>
         </div><!--Fechamento comida-->
 
         <div class="produtos_comida2">
             <div class="produto_comida">
                 <img src="imagens/Fruta_Puffle.webp" width="200rem" height="220rem">
-                <p>Fruta Puffle<br>R$ 20,00<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p>Fruta Puffle<br>R$ 20,00<br><br><a href="carrinho.html"><button type="submit"
+                            class="button">Comprar</button></a></p>
             </div>
             <div class="produto_comida">
                 <img src="imagens/Pizza.webp" width="220rem" height="200rem">
-                <p class="p_esp">Pizza<br>R$ 20,00<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p class="p_esp">Pizza<br>R$ 20,00<br><br><a href="carrinho.html"><button type="submit"
+                            class="button">Comprar</button></a></p>
             </div>
             <div class="produto_comida">
                 <img src="imagens/Pretzel.webp" width="200rem" height="200rem">
-                <p class="p_esp">Pretzel<br>R$ 20,00<br><br><a href="carrinho.html"><button type="submit" class="button">Comprar</button></a></p>
+                <p class="p_esp">Pretzel<br>R$ 20,00<br><br><a href="carrinho.html"><button type="submit"
+                            class="button">Comprar</button></a></p>
             </div>
         </div><!--Fechamento comida-->
 
     </div><!--Fechamento container-->
 
     <footer>
-       <div class="f1"><p>Todos os direitos reservados</p></div>
-       <div class="f2"><p>Contate-nos em: <br>Instagram: @puffleshop<br>Telefone: (11) 99999-9999<br>E-mail: pufflestore@example.com</p></div>
+        <div class="f1">
+            <p>Todos os direitos reservados</p>
+        </div>
+        <div class="f2">
+            <p>Contate-nos em: <br>Instagram: @puffleshop<br>Telefone: (11) 99999-9999<br>E-mail:
+                pufflestore@example.com</p>
+        </div>
     </footer>
 </body>
 
