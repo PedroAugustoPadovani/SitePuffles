@@ -1,0 +1,224 @@
+body {
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+header {
+    background-color: #54A4FF;
+    width: 100vw;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_header{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* .botao_home_header{
+} */
+
+.botao_login_header{
+    margin-left: -35rem;
+}
+
+.botao_meu_puffle_header{
+    margin-left: -35rem;
+}
+
+.botao_carrinho_header{
+    margin-left: -35rem;
+    margin-right: 4rem;
+}
+
+.botao_home_header a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.botao_login_header a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.botao_meu_puffle_header a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.botao_carrinho_header a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    
+}
+
+.produto_carrinho{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 4rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.imagem_produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 4rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.descricao_produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 4rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.quantidade_produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 4rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.total_produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.button_comprar{
+    width: 10rem;
+    height: 2.3rem;
+    border: 2px solid rgb(77, 77, 77);
+    border-radius: 7px;
+    background: #555555;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;	
+}
+
+.button_comprar:hover{
+    width: 10rem;
+    height: 2.3rem;
+    border: 2px solid white;
+    border-radius: 7px;
+    background: #54A4FF;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;	
+}
+
+.button_comprar:active{
+    width: 10rem;
+    height: 2.3rem;
+    border: 2px solid white;
+    border-radius: 7px;
+    background: #54A4FF;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;	
+}
+
+.input_quantidade{
+    width: 5rem;
+    height: 2rem;
+    border: 2px solid #2d3035;
+    border-radius: 7px;
+    background: #54A4FF;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;	
+}
+
+p{
+    color: black;
+}
+
+.button{
+    margin: 0 10px;
+    padding: 8px;
+    border: black;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: rgb(0, 89, 255);
+    background: rgb(241, 241, 241);
+    box-shadow: 0px 10px 40px -12px #868686;
+    transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55), background-position 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 500ms linear;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.button-hover:active {
+    transform: scale(1);
+    background-position: 500px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+footer {
+    margin-top: 10rem;
+    background-color: #54A4FF;
+    width: 100vw;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+}
+
+.f1{
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.f2{
+    margin-right: 30px;
+    margin-left: 15px;
+}
